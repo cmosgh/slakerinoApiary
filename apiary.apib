@@ -79,17 +79,20 @@ form of choices.
                 ]
             }
             
-## Users [/users]
+## InfoSheet [/info_sheets]
 
-### List all users [GET]
+### List all sheets [GET]
 
 + Response 200 (application/json)
 
         [
             {
-                "name":"Gigi maioneza",
+                "title":"Maioneza",
                 "published_at":"2015-08-05T08:40:51.620Z",
-                "last_active":"2016-08-05T08:55:51.620Z",
-                "monthly_active":"10hours"
+                "last_viewed":"2016-08-05T08:55:51.620Z",
+                "creator":{
+                    "_id":123cad31a25112
+                    "name":"Gigi Maioneza"
+                }
             }
         ]
